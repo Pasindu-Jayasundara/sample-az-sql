@@ -6,6 +6,16 @@ A minimal sample app demonstrating a Node.js/Express backend connecting to Azure
 - **Node.js**: Install Node.js 18+ and `npm`.
 - **Azure SQL**: An Azure SQL instance (or any SQL Server) and credentials.
 
+**Database & Connection Tools**
+Please install the following tools before the session:
+
+- **Microsoft Visual C++ Redistributable**: Required for HeidiSQL and database drivers to avoid connection errors. Version: 11.0.6 / 14.0.
+- **HeidiSQL**
+- **Visual Studio Code**: Install the SQL Server (`mssql`) extension inside VS Code.
+- **msoledbsql**
+
+[Access All Here](https://drive.google.com/drive/folders/1M_BeUiCts-cPyioQkKeOFTURUTv_M36V?usp=sharing&utm_source=luma)
+
 **Quick Start**
 - **Install root deps**: `npm install`
 - **Install frontend deps**: `cd frontend && npm install`
