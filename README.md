@@ -24,14 +24,9 @@ Please install the following tools before the session:
 - **Run backend only (dev)**: `nodemon index-module.js` (or `node index-module.js`)
 
 **Configuration**
-- Create a `.env` file in the project root (or set environment variables) with your Azure SQL connection values. See [db.js](db.js) to match the expected configuration keys. Example variables:
-
-```
-AZURE_SQL_SERVER=your-server.database.windows.net
-AZURE_SQL_DATABASE=your-database
-AZURE_SQL_USER=your-username
-AZURE_SQL_PASSWORD=your-password
-```
+- Copy `.env.example` to `.env` in the project root and fill in your Azure SQL connection values.
+- Keep `.env` local only. It is ignored by git so real credentials are not committed.
+- See [db.js](db.js) for how the app reads the environment values.
 
 **Project Structure**
 - **`db.js`**: Database connection helper and configuration. ([db.js](db.js))
