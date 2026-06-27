@@ -6,11 +6,11 @@ export const getAllUsers = async (req, res) => {
 }
 
 export const addUser = async (req, res) => {
-    const { Id, first_name, last_name } = req.body;
+    const { first_name, last_name } = req.body;
 
     try {
 
-        await addNewUserToDB(Id, first_name, last_name);
+        await addNewUserToDB(first_name, last_name);
         res.status(201).json({ message: 'User added successfully!' });
 
     } catch (err) {

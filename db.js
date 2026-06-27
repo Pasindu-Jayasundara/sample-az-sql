@@ -1,17 +1,17 @@
 import { Connection } from "tedious";
 
 const config = {
-    server: "az-uor-ss-sql-server.database.windows.net",
+    server: "asm02.database.windows.net",
     authentication: {
         type: "default",
         options: {
-            userName: "az-sql-admin",
-            password: "Pasindu328@"
+            userName: "pasindu328@",
+            password: "Bhathiya28@"
         }
     },
     options: {
         encrypt: true,
-        database: "db"
+        database: "free-sql-db-8739882"
     }
 };
 

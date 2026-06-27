@@ -34,11 +34,11 @@ export const getAllUsersFromDB = () => {
     });
 }
 
-export const addNewUserToDB = (Id, first_name, last_name) => {
+export const addNewUserToDB = (first_name, last_name) => {
 
     return new Promise((resolve,reject) => {
 
-        const query = `insert into dbo.[User] (Id, first_name, last_name) values (@id, @first_name, @last_name)`;
+        const query = `insert into dbo.[User] (first_name, last_name) values (@first_name, @last_name)`;
 
         const req = new Request(query, (err)=>{
             if(err){
@@ -46,7 +46,6 @@ export const addNewUserToDB = (Id, first_name, last_name) => {
                 reject(err);
             }
         });
-        req.addParameter('id', TYPES.Int, Id);
         req.addParameter('first_name', TYPES.NVarChar, first_name);
         req.addParameter('last_name', TYPES.NVarChar, last_name);
 
